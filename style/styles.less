@@ -569,6 +569,66 @@
 		}
 	}
 
+	#article .masthead {
+		padding-top: 1.5em * 5;
+
+		.manifest:extend(.container) {
+			width: (100% / 4) * 4;
+
+			.article-title {
+				font-size: 1.5em;
+				line-height: 1.5em;
+			}
+
+			.date {
+				position: relative;
+				color: white;
+			}
+		}
+	}
+
+	#article .article {
+
+		.body:extend(.container) {
+			line-height: 1.5em;
+			font-size: 1em;
+			width: (100% / 4) * 4;
+			margin-bottom: 1.5em;
+		}
+
+		.display-image {
+			position: relative;
+			width: (100% / 4) * 4;
+			height: 1.5em * 8;
+		}
+
+		.header:extend(.container) {
+			width: (100% / 4) * 4;
+		}
+
+		.video {
+			width: (100% / 4) * 4;
+			height: 1.5em * 8;
+		}
+	}
+
+	#article .comments {
+		.add-comment-form:extend(.container) {
+			position: relative;
+			width: (100% / 4) * 4;
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: (100% / 4) * 4;
+
+			.comment {
+				position: relative;
+				width: (100% / 4) * 4;
+			}
+		}
+	}
+
 }
 
 @media screen and (min-width: 425px) {
@@ -645,6 +705,50 @@
 			float: right;
 		}
 	}
+
+	#article .masthead {
+		.manifest:extend(.container) {
+			width: (100% / 8) * 6;
+		}
+	}
+
+	#article .article {
+		.body:extend(.container) {
+			width: (100% / 8) * 6;
+		}
+
+		.display-image {
+			position: relative;
+			width: (100% / 8) * 6;
+			height: 1.5em * 13;
+		}
+
+		.header:extend(.container) {
+			width: (100% / 8) * 6;
+		}
+
+		.video {
+			width: (100% / 8) * 6;
+			height: 1.5em * 13;
+		}
+	}
+
+	#article .comments {
+		.add-comment-form:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 6;
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 6;
+
+			.comment {
+				position: relative;
+				width: (100% / 6) * 5;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -699,6 +803,162 @@
 			.post {
 				width: (100% / 8) * 2;
 				margin: 1.5em ((100% - (((100% / 8) * 2) * 3)) / 4) / 2;
+			}
+		}
+	}
+
+	#article .masthead {
+		position: relative;
+		height: 1.5em * 13em;
+		padding-top: 1.5em * 6;
+
+		.manifest:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 5;
+			margin: auto;
+
+			.article-title {
+				position: relative;
+				color: white;
+				font-family: "Montserrat";
+				font-size: 2.25em;
+				font-weight: 700;
+				line-height: 1.5em;
+			}
+
+			.date {
+				position: relative;
+				color: white;
+			}
+		}
+	}
+
+	#article .masthead:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(27, 15, 40, .4);
+	}
+
+	#article .article {
+		position: relative;
+		padding-top: 1.5em * 3;
+		padding-bottom: 1.5em;
+
+		.body:extend(.container) {
+			position: relative;
+			color: #000;
+			line-height: 1.7em;
+			font-size: 1.25em;
+			width: (100% / 8) * 5;
+			margin: auto;
+			margin-bottom: 1.7em;
+
+			.link {
+				text-decoration: underline;
+			}
+		}
+
+		.display-image {
+			position: relative;
+			width: (100% / 8) * 4;
+			height: 1.5em * 14;
+			margin: auto;
+			margin-bottom: 3.375em;
+
+			.tag {
+				position: absolute;
+				bottom: -1.75em;
+				left: 0;
+				color: #444;
+			}
+		}
+
+		.header:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 5;
+			font-family: "Montserrat";
+			margin: auto;
+			margin-bottom: 0.8em; 
+		}
+
+		.video {
+			position: relative;
+			margin: auto;
+			display: block;
+			width: (100% / 8) * 4;
+			height: 1.5em * 13;
+			border: transparent;
+			outline: none;
+			margin-bottom: 1.7em;
+		}
+	}
+
+	#article .comments {
+		position: relative;
+		padding-top: 1.5em * 3;
+		padding-bottom: 1.5em * 3;
+
+		.add-comment-form:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 5;
+			margin: auto;
+			margin-bottom: 1.5em * 2;
+			padding-top: 1.5em * 2;
+			border-top: 0.5px solid rgba(0, 0, 0, .25);
+
+			.header {
+				position: relative;
+				font-family: "Montserrat";
+				display: block;
+				font-size: 1.5em;
+				color: #666;
+				font-weight: 700;
+				margin-bottom: 1.5em;
+			}
+
+			.text-field {
+				position: relative;
+				margin-bottom: 1.5em;
+			}
+
+			textarea {
+				width: (100% / 5) * 3;
+				height: 1.5em * 3;
+			}
+
+			.def-button {
+				background-color: #FFCC39;
+			}
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: (100% / 8) * 5;
+			margin: auto;
+
+			.header {
+				position: relative;
+				font-family: "Montserrat";
+				color: #666;
+				font-size: 1.5em;
+				margin-bottom: 1.5em;
+			}
+
+			.comment {
+				position: relative;
+				width: (100% / 5) * 4;
+				margin-bottom: 1.5em;
+
+				.username {
+					position: relative;
+					font-family: "Raleway";
+					font-weight: 600;
+					color: #333;
+				}
 			}
 		}
 	}
