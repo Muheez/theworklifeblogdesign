@@ -471,9 +471,48 @@
 		}
 	}
 
-	.comment-list:extend(.container) {
+	.comment-tabs:extend(.boxing) {
+		position: relative;
+		margin: auto;
+		margin-bottom: 1em;
+		width: (100% / 8) * 5;
+		border-bottom: 1px solid #ccc;
+
+		.tab:extend(.boxing) {
+			position: relative;
+			padding: 1em 1.5em 1em 0.75em;
+			height: 1.5em * 2;
+			float: left;
+			font-size: 1.25em;
+			font-family: "Raleway";
+			font-weight: 500;
+			cursor: pointer;
+			font-variant: small-caps;
+		}
+
+		.tab.active {
+			position: relative;
+			border-bottom: 2px solid #FFCC39;
+		}
+	}
+
+	.comment-views {
 		position: relative;
 		width: (100% / 8) * 5;
+		margin: auto;
+
+		.view {
+			width: 100%;
+			display: none;
+		}
+
+		.view.active {
+			display: block;
+		}
+	}
+
+	.comment-list:extend(.container) {
+		position: relative;
 		margin: auto;
 
 		.header {
@@ -639,9 +678,46 @@
 			width: (100% / 4) * 4;
 		}
 
-		.comment-list:extend(.container) {
+		.comment-tabs:extend(.boxing) {
 			position: relative;
 			width: (100% / 4) * 4;
+	
+			.tab:extend(.boxing) {
+				position: relative;
+				padding: 1em 0.75em 1em 0.3em;
+				height: 1.5em * 2;
+				float: left;
+				font-size: 1.25em;
+				font-family: "Raleway";
+				font-weight: 500;
+				cursor: pointer;
+				font-variant: small-caps;
+			}
+	
+			.tab.active {
+				position: relative;
+				border-bottom: 2px solid #FFCC39;
+			}
+		}
+	
+		.comment-views {
+			position: relative;
+			width: (100% / 4) * 4;
+			margin: auto;
+	
+			.view {
+				width: 100%;
+				display: none;
+			}
+	
+			.view.active {
+				display: block;
+			}
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: 100%;
 
 			.comment {
 				position: relative;
@@ -758,9 +834,39 @@
 			width: (100% / 8) * 6;
 		}
 
-		.comment-list:extend(.container) {
+		.comment-tabs:extend(.boxing) {
+			width: (100% / 8) * 6;
+			border-bottom: 1px solid #ccc;
+	
+			.tab:extend(.boxing) {
+				position: relative;
+				padding: 1em 1.5em 1em 0.75em;
+			}
+	
+			.tab.active {
+				position: relative;
+				border-bottom: 2px solid #FFCC39;
+			}
+		}
+	
+		.comment-views {
 			position: relative;
 			width: (100% / 8) * 6;
+			margin: auto;
+	
+			.view {
+				width: 100%;
+				display: none;
+			}
+	
+			.view.active {
+				display: block;
+			}
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: 100%;
 
 			.comment {
 				position: relative;
@@ -954,10 +1060,49 @@
 			}
 		}
 
-		.comment-list:extend(.container) {
+		.comment-tabs:extend(.boxing) {
+			position: relative;
+			margin: auto;
+			margin-bottom: 1em;
+			width: (100% / 8) * 5;
+			border-bottom: 1px solid #ccc;
+	
+			.tab:extend(.boxing) {
+				position: relative;
+				padding: 1em 1.5em 1em 0.75em;
+				height: 1.5em * 2;
+				float: left;
+				font-size: 1.25em;
+				font-family: "Raleway";
+				font-weight: 500;
+				cursor: pointer;
+				font-variant: small-caps;
+			}
+	
+			.tab.active {
+				position: relative;
+				border-bottom: 2px solid #FFCC39;
+			}
+		}
+	
+		.comment-views {
 			position: relative;
 			width: (100% / 8) * 5;
 			margin: auto;
+	
+			.view {
+				width: 100%;
+				display: none;
+			}
+	
+			.view.active {
+				display: block;
+			}
+		}
+
+		.comment-list:extend(.container) {
+			position: relative;
+			width: 100%;
 
 			.header {
 				position: relative;

@@ -50,24 +50,54 @@
 			<textarea class="text-field" placeholder="Write a Response..."></textarea>
 			<input type="submit" name="submit" class="def-button" value="Comment">
 		</form>
-		<ul class="comment-list">
-			<h2 class="header">Comments</h2>
-			<li class="comment">
-				<h4 class="username">Henry Oriaku</h4>
-				<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</li>
-			<li class="comment">
-				<h4 class="username">Damilola Adio</h4>
-				<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-			</li>
+		<ul class="comment-tabs clearfix">
+			<li class="tab active" data-ref="all-comments">all comments</li>
+			<li class="tab" data-ref="authors-pick">author's picks</li>
 		</ul>
+		<div class="comment-views">
+			<ul class="view comment-list all-comments active">
+				<li class="comment">
+					<h4 class="username">Henry Oriaku</h4>
+					<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="tick-btn pick"></div>
+				</li>
+				<li class="comment">
+					<h4 class="username">Damilola Adio</h4>
+					<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="tick-btn pick active"></div>
+				</li>
+			</ul>
+			<ul class="view comment-list authors-pick">
+				<li class="comment">
+					<h4 class="username">Henry Oriaku</h4>
+					<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</li>
+				<li class="comment">
+					<h4 class="username">Damilola Adio</h4>
+					<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 	<div class="footer view clearfix">
-		<p class="copyright">Copyright 2018 | #ThatWorkLife</p>
-		<div class="social-links clearfix">
-			<a href="#" class="link twitter">@thatWorkLife</a>
-			<a href="#" class="link facebook">ThatWorkLife</a>
+		<div class="info clearfix">
+			<form class="subscribe-form" id="footer-sub">
+				<label for="footer-sub" class="header">Subscribe</label>
+				<input type="text" name="fullname" class="text-field" placeholder="Fullname">
+				<input type="text" name="email" class="text-field" placeholder="Email">
+				<input type="submit" class="def-button" value="subscribe">
+			</form>
+			<div class="elsewhere">
+				<h3 class="header">Elsewhere</h3>
+				<div class="links">
+					<a href="#" class="link twitter">Twitter</a>
+					<a href="#" class="link facebook">Facebook</a>
+				</div>
+			</div>
 		</div>
+		<p class="copyright">Copyright 2018 | thatWorkLife</p>
 	</div>
+<script src="script/article.js"></script>
 </body>
 </html>
