@@ -164,45 +164,77 @@
 
 .footer {
 	position: relative;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1.5em * 2px;
+	padding-bottom: 1.5em * 2px;
+	background-color: #080808;
+	color: white;
 
-	.copyright {
+	.info {
 		position: relative;
-		font-family: "Montserrat";
-		font-weight: 400;
-		font-size: 0.8em;
-		float: left;
-		color: #6e6e6e;
+		display: table;
+		margin: auto;
+		margin-bottom: 1.5em * 2;
 	}
 
-	.social-links {
+	.subscribe-form {
 		position: relative;
-		float: right;
+		float: left;
+		padding-right: 1.5em * 2;
+		border-right: 1px solid white;
+		
+		.header {
+			position: relative;
+			font-family: "Raleway";
+			font-weight: 400;
+			font-size: 1.8em;
+			display: block;
+			margin-bottom: 1.25em;
+		}
+
+		.text-field {
+			position: relative;
+			margin-bottom: 1.5em;
+			border: transparent;
+		}
+
+		.def-button {
+			background-color: #FFCC39;
+		}
+	}
+
+	.elsewhere {
+		position: relative;
+		float: left;
+		padding-left: 1.5em * 2;
+
+		.header {
+			position: relative;
+			font-size: 1.8em;
+			font-family: "Raleway";
+			font-weight: 400;
+			margin-bottom: 1.25em;
+		}
 
 		.link {
 			position: relative;
 			display: block;
-			padding-left: 1.8em;
-			font-family: "Raleway";
-			font-weight: 600;
-			float: left;
-			opacity: 0.54;
-		}
-
-		.link:first-of-type {
-			margin-right: 1.5em;
+			padding: 1em 0 1em 2.5em;
 		}
 
 		.twitter {
 			background: url("../icons/twitter.svg") left no-repeat;
-			background-size: 15%;
+			background-size: 24px;
 		}
 
 		.facebook {
 			background: url("../icons/facebook.svg") left no-repeat;
-			background-size: 15%;
+			background-size: 24px;
 		}
+	}
+
+	.copyright {
+		position: relative;
+		text-align: center;
 	}
 }
 
@@ -527,18 +559,7 @@
 	}
 
 	.footer {
-		.copyright {
-			margin-bottom: 1em;
-			margin-right: 1.5em;
-		}
-
-		.social-links {
-			float: left;
-
-			.link {
-				margin-bottom: 1em;
-			}
-		}
+		
 	}
 
 	#home .subscribe-modal {
@@ -701,9 +722,7 @@
 	}
 
 	.footer {
-		.social-links {
-			float: right;
-		}
+
 	}
 
 	#article .masthead {
